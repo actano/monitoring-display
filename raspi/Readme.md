@@ -1,10 +1,10 @@
 ## Installation
 - Install Raspbian on the raspi
 - do the initial setup of Raspbian
-    set a password for the user `pi` and document it via `sudo raspi-config`
-    configure wireless lan via editing `/etc/wpa_supplicant/wpa_supplicant.conf`
-    enable VNC service, so that you can maintain it remotly via `sudo raspi-config`
-    enable SSH service for the same reason via `sudo raspi-config`
+  - set a password for the user `pi` and document it via `sudo raspi-config`
+  - configure wireless lan via editing `/etc/wpa_supplicant/wpa_supplicant.conf`
+  - enable VNC service, so that you can maintain it remotly via `sudo raspi-config`
+  - enable SSH service for the same reason via `sudo raspi-config`
 - clone this repository with https, so that others don't access your github commit by a saved token. You will be asked for your github password at every git operation you perform. The project has to be in /home/pi/monitoring-display, so that the paths in scripts match.
     `git clone https://<your github name>@github.com/actano/monitoring-display.git`
 - call `/home/pi/monitoring-display/raspi/bin/installStatusMonitor.sh`
