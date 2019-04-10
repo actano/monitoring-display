@@ -2,6 +2,7 @@
 - Install Raspbian on the raspi
 - do the initial setup of Raspbian
   - set a password for the user `pi` and document it via `sudo raspi-config`
+  - set a hostname for your raspi, so that you can reach it later on via `sudo raspi-config`
   - configure wireless lan via editing `/etc/wpa_supplicant/wpa_supplicant.conf`
   - enable VNC service, so that you can maintain it remotly via `sudo raspi-config`
   - enable SSH service for the same reason via `sudo raspi-config`
