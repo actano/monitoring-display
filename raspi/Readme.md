@@ -27,3 +27,6 @@ To get rid of the "Chromium wurde nicht richtig beendet" bubble after power loss
 
 - copy this backup to its original location before starting Chromium
 - Commandline switches were not working, removing write access for user pi did't do the job either. Maybe changing ownership also works?
+
+### Hide mouse cursor
+To hide the mouse cursor, a tool called 'unclutter' is used. It is installed by the install script and called by the chromium start script.
