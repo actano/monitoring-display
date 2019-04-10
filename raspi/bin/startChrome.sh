@@ -12,9 +12,10 @@ echo $TIME > $LOG
 /usr/bin/xset s noblank
 /usr/bin/xset s off
 /usr/bin/xset -dpms
+/usr/bin/unclutter -idle 0 > /dev/null 1>&2 &
 
 /usr/bin/xset -q >> $LOG
 
 cp $PROJECT_ROOT/ChromiumPreferences /home/pi/.config/chromium/Default/Preferences
-echo /usr/bin/chromium-browser $CHROMIUM_FLAGS $URL >> $LOG
+echo "/usr/bin/chromium-browser $CHROMIUM_FLAGS $URL" >> $LOG
 /usr/bin/chromium-browser $CHROMIUM_FLAGS $URL &
