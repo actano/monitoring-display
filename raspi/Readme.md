@@ -5,6 +5,7 @@
   - configure wireless lan via editing `/etc/wpa_supplicant/wpa_supplicant.conf`
   - enable VNC service, so that you can maintain it remotly via `sudo raspi-config`
   - enable SSH service for the same reason via `sudo raspi-config`
+  - start chromium and install https://github.com/benjaminoakes/TabCarousel
 - clone this repository with https, so that others don't access your github commit by a saved token. You will be asked for your github password at every git operation you perform. The project has to be in /home/pi/monitoring-display, so that the paths in scripts match.
     `git clone https://<your github name>@github.com/actano/monitoring-display.git`
 - call `/home/pi/monitoring-display/raspi/bin/installStatusMonitor.sh`
@@ -27,6 +28,10 @@ To get rid of the "Chromium wurde nicht richtig beendet" bubble after power loss
 
 - copy this backup to its original location before starting Chromium
 - Commandline switches were not working, removing write access for user pi did't do the job either. Maybe changing ownership also works?
+
+### Cycle through open tabs
+- install TabCaroussel
+- options are stored in the Preferences file mentioned above
 
 ### Hide mouse cursor
 To hide the mouse cursor, a tool called 'unclutter' is used. It is installed by the install script and called by the chromium start script.
